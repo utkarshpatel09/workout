@@ -1,0 +1,377 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>6-Day Workout Plan</title>
+      <style>
+          body {
+              font-family: 'Arial', sans-serif;
+              margin: 0;
+              padding: 20px;
+              background: linear-gradient(135deg, #1131c1 0%, #764ba2 100%);
+              color: white;
+              line-height: 1.6;
+          }
+          
+          .container {
+              max-width: 1200px;
+              margin: 0 auto;
+              background: rgba(255, 255, 255, 0.1);
+              backdrop-filter: blur(10px);
+              border-radius: 20px;
+              padding: 30px;
+              box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+          }
+          
+          h1 {
+              text-align: center;
+              font-size: 2.5em;
+              margin-bottom: 10px;
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          }
+          
+          .subtitle {
+              text-align: center;
+              font-size: 1.2em;
+              margin-bottom: 30px;
+              opacity: 0.9;
+          }
+          
+          .schedule-grid {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+              gap: 20px;
+              margin-bottom: 30px;
+          }
+          
+          .day-card {
+              background: rgba(255, 255, 255, 0.15);
+              border-radius: 15px;
+              padding: 20px;
+              border: 1px solid rgba(255, 255, 255, 0.2);
+              transition: transform 0.3s ease;
+          }
+          
+          .day-card:hover {
+              transform: translateY(-5px);
+          }
+          
+          .day-title {
+              font-size: 1.4em;
+              font-weight: bold;
+              margin-bottom: 15px;
+              color: #FFD700;
+              text-align: center;
+          }
+          
+          .muscle-groups {
+              font-size: 1.1em;
+              margin-bottom: 15px;
+              text-align: center;
+              font-weight: 600;
+          }
+          
+          .workout-details {
+              font-size: 0.9em;
+              opacity: 0.9;
+          }
+          
+          .exercise-list {
+              margin: 10px 0;
+              padding-left: 20px;
+          }
+          
+          .exercise-list li {
+              margin: 5px 0;
+          }
+          
+          .cardio-section {
+              background: rgba(181, 66, 66, 0.878);
+              border-radius: 10px;
+              padding: 10px;
+              margin-top: 10px;
+          }
+          
+          .notes-section {
+              margin-top: 40px;
+              background: rgba(255, 255, 255, 0.1);
+              border-radius: 15px;
+              padding: 25px;
+          }
+          
+          .notes-grid {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+              gap: 20px;
+          }
+          
+          .note-card {
+              background: rgba(255, 255, 255, 0.1);
+              border-radius: 10px;
+              padding: 15px;
+          }
+          
+          .note-title {
+              font-weight: bold;
+              color: #FFD700;
+              margin-bottom: 10px;
+              font-size: 1.1em;
+          }
+          
+          .rest-day {
+              background: rgba(34, 197, 94, 0.428);
+              text-align: center;
+              padding: 30px;
+          }
+          
+          .time-badge {
+              display: inline-block;
+              background: rgba(255, 255, 255, 0.2);
+              padding: 5px 10px;
+              border-radius: 20px;
+              font-size: 0.8em;
+              margin: 5px 0;
+          }
+      </style>
+  </head>
+  <body>
+      <div class="container">
+          <h1>💪 6-DAY WORKOUT PLAN</h1>
+          <div class="subtitle">Weight Loss & Muscle Building | 2 Hours Per Session</div>
+          
+          <div class="schedule-grid">
+              <div class="day-card">
+                  <div class="day-title">MONDAY</div>
+                  <div class="muscle-groups">🔥 CHEST & TRICEPS</div>
+                  <div class="time-badge">Strength: 80 min</div>
+                  <div class="workout-details">
+                      <strong>Chest (40 min):</strong>
+                      <ul class="exercise-list">
+                          <li>Bench Press: 4×8-10</li>
+                          <li>Incline DB Press: 4×10-12</li>
+                          <li>Decline Press: 3×10-12</li>
+                          <li>DB Flyes: 3×12-15</li>
+                          <li>Incline Flyes: 3×12-15</li>
+                          <li>Push-ups: 3×failure</li>
+                      </ul>
+                      <strong>Triceps (40 min):</strong>
+                      <ul class="exercise-list">
+                          <li>Close-grip Bench: 4×8-10</li>
+                          <li>Tricep Dips: 4×12-15</li>
+                          <li>Overhead Extension: 3×12-15</li>
+                          <li>Cable Pushdowns: 3×12-15</li>
+                          <li>Rope Pushdowns: 3×15</li>
+                          <li>Diamond Push-ups: 3×10-15</li>
+                      </ul>
+                  </div>
+                  <div class="cardio-section">
+                      <strong>🏃‍♂️ HIIT Cardio: 25 min</strong><br>
+                      30 sec high intensity, 90 sec recovery
+                  </div>
+              </div>
+
+              <div class="day-card">
+                  <div class="day-title">TUESDAY</div>
+                  <div class="muscle-groups">💪 BACK & BICEPS</div>
+                  <div class="time-badge">Strength: 80 min</div>
+                  <div class="workout-details">
+                      <strong>Back (40 min):</strong>
+                      <ul class="exercise-list">
+                          <li>Deadlifts: 4×6-8</li>
+                          <li>Pull-ups/Pulldowns: 4×8-12</li>
+                          <li>Bent-over Rows: 4×10-12</li>
+                          <li>T-Bar Rows: 3×10-12</li>
+                          <li>Cable Rows: 3×12-15</li>
+                          <li>Face Pulls: 3×15-20</li>
+                      </ul>
+                      <strong>Biceps (40 min):</strong>
+                      <ul class="exercise-list">
+                          <li>Barbell Curls: 4×10-12</li>
+                          <li>DB Curls: 4×10-12</li>
+                          <li>Hammer Curls: 3×12-15</li>
+                          <li>Preacher Curls: 3×12-15</li>
+                          <li>Cable Curls: 3×15</li>
+                          <li>21s: 3 sets</li>
+                      </ul>
+                  </div>
+                  <div class="cardio-section">
+                      <strong>🚴‍♂️ Steady Cardio: 25 min</strong><br>
+                      65-75% max heart rate
+                  </div>
+              </div>
+
+              <div class="day-card">
+                  <div class="day-title">WEDNESDAY</div>
+                  <div class="muscle-groups">🏔️ SHOULDERS & TRAPS</div>
+                  <div class="time-badge">Strength: 80 min</div>
+                  <div class="workout-details">
+                      <strong>Shoulders (40 min):</strong>
+                      <ul class="exercise-list">
+                          <li>Military Press: 4×8-10</li>
+                          <li>DB Shoulder Press: 4×10-12</li>
+                          <li>Lateral Raises: 4×12-15</li>
+                          <li>Front Raises: 3×12-15</li>
+                          <li>Rear Delt Flyes: 4×12-15</li>
+                          <li>Arnold Press: 3×10-12</li>
+                      </ul>
+                      <strong>Traps (40 min):</strong>
+                      <ul class="exercise-list">
+                          <li>Barbell Shrugs: 4×12-15</li>
+                          <li>DB Shrugs: 4×12-15</li>
+                          <li>Upright Rows: 3×12-15</li>
+                          <li>Cable Shrugs: 3×15</li>
+                          <li>High Pulls: 3×10</li>
+                          <li>Farmer's Walks: 3×40 steps</li>
+                      </ul>
+                  </div>
+                  <div class="cardio-section">
+                      <strong>🔥 HIIT Cardio: 25 min</strong><br>
+                      45 sec work, 75 sec rest
+                  </div>
+              </div>
+
+              <div class="day-card">
+                  <div class="day-title">THURSDAY</div>
+                  <div class="muscle-groups">🦵 QUADS & GLUTES</div>
+                  <div class="time-badge">Strength: 80 min</div>
+                  <div class="workout-details">
+                      <strong>Quads (40 min):</strong>
+                      <ul class="exercise-list">
+                          <li>Back Squats: 4×8-10</li>
+                          <li>Front Squats: 4×10-12</li>
+                          <li>Leg Press: 4×15</li>
+                          <li>Bulgarian Split Squats: 3×12 each</li>
+                          <li>Walking Lunges: 3×20 steps</li>
+                          <li>Leg Extensions: 3×15-20</li>
+                      </ul>
+                      <strong>Glutes (40 min):</strong>
+                      <ul class="exercise-list">
+                          <li>Hip Thrusts: 4×12-15</li>
+                          <li>Sumo Deadlifts: 4×10-12</li>
+                          <li>Romanian Deadlifts: 3×12-15</li>
+                          <li>Lateral Lunges: 3×12 each</li>
+                          <li>Clamshells: 3×20 each</li>
+                          <li>Single-leg Glute Bridges: 3×15 each</li>
+                      </ul>
+                  </div>
+                  <div class="cardio-section">
+                      <strong>🚴‍♂️ Steady Cardio: 25 min</strong><br>
+                      Incline walking or cycling
+                  </div>
+              </div>
+
+              <div class="day-card">
+                  <div class="day-title">FRIDAY</div>
+                  <div class="muscle-groups">🦵 HAMSTRINGS & CALVES</div>
+                  <div class="time-badge">Strength: 80 min</div>
+                  <div class="workout-details">
+                      <strong>Hamstrings (40 min):</strong>
+                      <ul class="exercise-list">
+                          <li>Romanian Deadlifts: 4×10-12</li>
+                          <li>Stiff-leg Deadlifts: 4×10-12</li>
+                          <li>Lying Leg Curls: 4×12-15</li>
+                          <li>Seated Leg Curls: 3×12-15</li>
+                          <li>Good Mornings: 3×12-15</li>
+                          <li>Single-leg RDLs: 3×10 each</li>
+                      </ul>
+                      <strong>Calves (40 min):</strong>
+                      <ul class="exercise-list">
+                          <li>Standing Calf Raises: 4×15-20</li>
+                          <li>Seated Calf Raises: 4×15-20</li>
+                          <li>Calf Press: 4×20</li>
+                          <li>Single-leg Raises: 3×12 each</li>
+                          <li>Donkey Raises: 3×15-20</li>
+                          <li>Calf Raises (variations): 6×15</li>
+                      </ul>
+                  </div>
+                  <div class="cardio-section">
+                      <strong>🏃‍♂️ HIIT Cardio: 25 min</strong><br>
+                      30 sec sprint, 90 sec recovery
+                  </div>
+              </div>
+
+              <div class="day-card">
+                  <div class="day-title">SATURDAY</div>
+                  <div class="muscle-groups">💥 CORE & CARDIO</div>
+                  <div class="time-badge">Core: 70 min</div>
+                  <div class="workout-details">
+                      <strong>Upper Abs (25 min):</strong>
+                      <ul class="exercise-list">
+                          <li>Crunches: 4×20-25</li>
+                          <li>Bicycle Crunches: 4×30</li>
+                          <li>Reverse Crunches: 4×15-20</li>
+                          <li>Dead Bugs: 3×15 each</li>
+                          <li>Toe Touches: 3×20</li>
+                      </ul>
+                      <strong>Lower Abs (25 min):</strong>
+                      <ul class="exercise-list">
+                          <li>Leg Raises: 4×15-20</li>
+                          <li>Hanging Knee Raises: 4×12-15</li>
+                          <li>Mountain Climbers: 4×30 sec</li>
+                          <li>Scissor Kicks: 3×30 sec</li>
+                          <li>Flutter Kicks: 3×30 sec</li>
+                      </ul>
+                      <strong>Obliques (20 min):</strong>
+                      <ul class="exercise-list">
+                          <li>Russian Twists: 4×30</li>
+                          <li>Side Planks: 3×45 sec each</li>
+                          <li>Wood Chops: 3×15 each</li>
+                          <li>Planks: 3×60 sec</li>
+                      </ul>
+                  </div>
+                  <div class="cardio-section">
+                      <strong>🔥 Extended Cardio: 45 min</strong><br>
+                      Choose: Steady-state, HIIT, or Circuit
+                  </div>
+              </div>
+
+              <div class="day-card rest-day">
+                  <div class="day-title">SUNDAY</div>
+                  <div class="muscle-groups">😴 REST DAY</div>
+                  <div style="font-size: 1.2em; margin-top: 20px;">
+                      Complete rest or light walking<br>
+                      Focus on nutrition & recovery<br>
+                      Hydration & sleep priority
+                  </div>
+              </div>
+          </div>
+
+          <div class="notes-section">
+              <h2 style="text-align: center; color: #FFD700; margin-bottom: 25px;">📋 IMPORTANT NOTES</h2>
+              <div class="notes-grid">
+                  <div class="note-card">
+                      <div class="note-title">🏋️‍♂️ Progression</div>
+                      • Increase weight by 2.5-5% when completing all sets with perfect form<br>
+                      • Add one rep before increasing weight<br>
+                      • Track all workouts weekly
+                  </div>
+                  
+                  <div class="note-card">
+                      <div class="note-title">🥗 Nutrition</div>
+                      • Slight caloric deficit (200-500 below maintenance)<br>
+                      • 1g protein per lb body weight<br>
+                      • Time carbs around workouts<br>
+                      • Stay hydrated
+                  </div>
+                  
+                  <div class="note-card">
+                      <div class="note-title">😴 Recovery</div>
+                      • 7-9 hours sleep nightly<br>
+                      • Take rest days seriously<br>
+                      • Listen to your body<br>
+                      • Consider yoga/stretching
+                  </div>
+                  
+                  <div class="note-card">
+                      <div class="note-title">⚠️ Safety</div>
+                      • Always warm up properly<br>
+                      • Form over heavy weight<br>
+                      • Use spotters for heavy lifts<br>
+                      • Stop if you feel pain
+                  </div>
+              </div>
+          </div>
+      </div>
+  </body>
+  </html>
